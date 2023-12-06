@@ -64,15 +64,3 @@
     height: auto;
     width: 100%;
 }
-/* create modal */
-.create-modal{
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    visibility: hidden;
-    opacity: 0;
-}

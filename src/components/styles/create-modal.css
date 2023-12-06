@@ -1,0 +1,61 @@
+.create-account{
+    height: auto;
+    width: 40vw;
+    background: yellow;
+    padding: 2vw;
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    border: .1vw solid whitesmoke;
+    box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+}
+.account{
+    text-align: center;
+}
+.account h1{
+    font-size: 2.5vw;
+    font-family: "Cocogoose";
+    font-weight: 10;
+    color: #3C9C3A;
+}
+.motto-modal{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.motto-modal p{
+    font-size: .7vw;
+    position: absolute;
+    bottom: 0;
+    font-family: "Cocogoose";
+    color: #749774;
+}
+.use-google-btn{
+    margin: 2vw 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.use-google-btn button{
+    padding: 1vw 8vw;
+    border-radius: 1vw;
+    background: none;
+    border: none;
+    outline: 0;
+    box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#google-icon{
+    font-size: .7vw;
+    margin: 0 .5vw 0 0;
+}

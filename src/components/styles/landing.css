@@ -1,0 +1,78 @@
+.main-landing{
+    height: auto;
+    width: 100%;
+}
+.landing-page{
+    height: auto;
+    width: 100%;
+    padding: 15vw 0 0 0;
+}
+.get-start{
+    text-align: center;
+    position: relative;
+}
+.tasktifylogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tasktifylogo img{
+    height: auto;
+    width: 5vw;
+}
+.get-start h1{
+    font-size: 4vw;
+    font-family: "Cocogoose";
+    font-weight: 10;
+    color: #3C9C3A;
+}
+.motto{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.motto p{
+    font-size: 1vw;
+    bottom: 3.5vw;
+    font-family: "Cocogoose";
+    color: #749774;
+    position: absolute;
+    margin: 0;
+}
+.getstart button{
+    margin: 1vw;
+    padding: .5vw 3vw;
+    border-radius: 3vw;
+    color: #3C9C3A;
+    border: .1vw solid #3C9C3A;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    outline: 0;
+}
+.get-start button:hover{
+    background: #3C9C3A;
+    color: whitesmoke;
+}
+.onscroll-imgs{
+    height: auto;
+    width: 100%;
+    margin: 1vw 0 0 0;
+}
+.onscroll-imgs img{
+    height: auto;
+    width: 100%;
+}
+/* create modal */
+.create-modal{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+}

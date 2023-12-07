@@ -1,5 +1,5 @@
 .create-account{
-    height: auto;
+    height: 32vw;
     width: 40vw;
     padding: 2vw;
     border-radius: 1vw;
@@ -11,6 +11,8 @@
     z-index: 3;
     transition: .3s ease-in-out;
     transform: scale(0);
+    position: relative;
+    overflow: hidden;
 }
 .create-account.true{
     transform: scale(1);
@@ -26,6 +28,21 @@
 }
 .account{
     text-align: center;
+    position: relative;
+}
+.account section{
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+.login-account{
+    transition: .3s ease-in-out;
+}
+.login-account.false{
+    left: 0;
+}
+.login-account.true{
+    left: -100vw;
 }
 .account p{
     font-size: .7vw;
@@ -134,4 +151,72 @@
     width: 2vw;
     margin: .5vw .5vw 0 .5vw;
     cursor: pointer;
+}
+/* form */
+.create-account-now{
+    padding: 1vw 5vw;
+    right: 100vw;
+    transition: .3s ease-in-out;
+}
+.create-account-now.true{
+    right: 0;
+}
+form{
+    width: 100%;
+}
+.fill-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fill-name input{
+    width: 14.5vw;
+}
+form input{
+    height: auto;
+    width: 100%;
+    padding: 1vw 0;
+    text-align: center;
+    font-size: .7vw;
+    margin: .5vw 0;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    background: none;
+    border: .1vw solid rgb(119, 119, 119);
+    outline: 0;
+}
+.countries{
+    background: whitesmoke;
+    font-size: .5vw;
+}
+.agree-create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.agree-create input{
+    height: auto;
+    width: auto;
+}
+.agree-create p{
+    margin: 0 0 0 .5vw;
+    font-size: .5vw;
+}
+.agree-create span{
+    color: #3C9C3A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+form button{
+    padding: .5vw 3vw;
+    border-radius: 1vw;
+    background: #3C9C3A;
+    color: whitesmoke;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+form button:hover{
+    background: #144613;
 }

@@ -1,0 +1,213 @@
+.create-account{
+    height: 32vw;
+    width: 40vw;
+    padding: 2vw;
+    border-radius: 1vw;
+    border: .1vw solid whitesmoke;
+    background: whitesmoke;
+    box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
+    z-index: 3;
+    transition: .3s ease-in-out;
+    transform: scale(0);
+    position: relative;
+    overflow: hidden;
+}
+.create-account.true{
+    transform: scale(1);
+}
+.close-btn{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#close-button{
+    font-size: 1vw;
+    cursor: pointer;
+}
+.account{
+    text-align: center;
+    position: relative;
+}
+.account section{
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+.login-account{
+    transition: .3s ease-in-out;
+}
+.login-account.false{
+    left: 0;
+}
+.login-account.true{
+    left: -100vw;
+}
+.account p{
+    font-size: .7vw;
+    margin: 1vw 0 0 0;
+    font-family: "Cocogoose";
+}
+.account h1{
+    font-size: 2.5vw;
+    font-family: "Cocogoose";
+    font-weight: 10;
+    color: #3C9C3A;
+}
+.motto-modal{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.motto-modal p{
+    font-size: .7vw;
+    position: absolute;
+    bottom: 0;
+    font-family: "Cocogoose";
+    color: #749774;
+}
+.use-google-btn{
+    margin: 2vw 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.use-google-btn button{
+    padding: 1vw 8vw;
+    border-radius: 1vw;
+    background: none;
+    border: .1vw solid black;
+    outline: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#google-icon{
+    font-size: .7vw;
+    margin: 0 .5vw 0 0;
+}
+.input-login{
+    padding: 1vw 5vw;
+}
+.input-login input{
+    height: auto;
+    width: 100%;
+    padding: 1vw 0;
+    text-align: center;
+    font-size: .7vw;
+    margin: 0 0 1vw 0;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    background: none;
+    border: .1vw solid black;
+    outline: 0;
+}
+.input-login button{
+    padding: .5vw 5vw;
+    border-radius: 1vw;
+    outline: 0;
+    background: #3C9C3A;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.input-login button:hover{
+    background: #144613;
+}
+.account li{
+    list-style: none;
+    font-size: .6vw;
+    font-family: "Cocogoose";
+    color: #3C9C3A;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.account li:hover{
+    color: #144613;
+}
+.create-foot{
+    margin: 2vw 0 0 0;
+}
+.fticon{
+    margin: .5vw .5vw 0 .5vw;
+}
+.foot-icons img{
+    height: auto;
+    width: 2vw;
+    margin: .5vw .5vw 0 .5vw;
+    cursor: pointer;
+}
+/* form */
+.create-account-now{
+    padding: 1vw 5vw;
+    right: 100vw;
+    transition: .3s ease-in-out;
+}
+.create-account-now.true{
+    right: 0;
+}
+form{
+    width: 100%;
+}
+.fill-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fill-name input{
+    width: 14.5vw;
+}
+form input{
+    height: auto;
+    width: 100%;
+    padding: 1vw 0;
+    text-align: center;
+    font-size: .7vw;
+    margin: .5vw 0;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    background: none;
+    border: .1vw solid rgb(119, 119, 119);
+    outline: 0;
+}
+.countries{
+    background: whitesmoke;
+    font-size: .5vw;
+}
+.agree-create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.agree-create input{
+    height: auto;
+    width: auto;
+}
+.agree-create p{
+    margin: 0 0 0 .5vw;
+    font-size: .5vw;
+}
+.agree-create span{
+    color: #3C9C3A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+form button{
+    padding: .5vw 3vw;
+    border-radius: 1vw;
+    background: #3C9C3A;
+    color: whitesmoke;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+form button:hover{
+    background: #144613;
+}

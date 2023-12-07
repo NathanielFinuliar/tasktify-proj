@@ -79,11 +79,8 @@
     padding: 1vw 8vw;
     border-radius: 1vw;
     background: none;
-    border: none;
+    border: .1vw solid black;
     outline: 0;
-    box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
-    -webkit-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
-    -moz-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -106,14 +103,8 @@
     box-sizing: border-box;
     border-radius: 1vw;
     background: none;
-    border: none;
+    border: .1vw solid black;
     outline: 0;
-    box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
-    -webkit-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
-    -moz-box-shadow: 0px 0px .5vw 0px rgba(0,0,0,0.69);
-}
-.input-login input::placeholder{
-    opacity: 50%;
 }
 .input-login button{
     padding: .5vw 5vw;

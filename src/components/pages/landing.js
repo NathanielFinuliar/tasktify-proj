@@ -2,7 +2,7 @@ import React, {useEffect,useState} from "react";
 // css
 import '../styles/landing.css'
 // js
-
+import Popular from "./popularwork";
 // asset 
 import tasktifylogo from '../assets/tasktifylogo.png'
 import compiled from '../assets/compiled-img.png'
@@ -27,6 +27,7 @@ const Landing = () => {
             <div className="onscroll-imgs">
                 <img src={compiled} alt="" />
             </div>
+            <Popular/>
         </div>
     </div>
   )

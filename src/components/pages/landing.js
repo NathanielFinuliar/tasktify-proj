@@ -6,28 +6,85 @@ import Popular from "./popularwork";
 // asset 
 import tasktifylogo from '../assets/tasktifylogo.png'
 import compiled from '../assets/compiled-img.png'
+import Tasktify from "./tasktify";
+import CreateAcc from "./create-acc";
+import Taskweek from "./taskerweek"
 
 const Landing = () => {
 
+// usestate
+const [ closeModal, setClosemodal ] = useState(true);
+const [ imagesUp, setImagesup ] = useState("");
+const [scrollani1, setScrollani1] = useState(false);
+
+// auto close modal and lower image sets
+const autoModal = () => {
+    setClosemodal(false)
+}
+
+// useeffect
+useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+
+}, []);
+console.log(window.scrollY);
+// Event listener to track scroll position
+const handleScroll = () => {
+    if (window.scrollY <= 100) {
+        setClosemodal(false)
+    } else {
+    }
+    if (window.scrollY >= 200) {
+        setImagesup("upimage")
+    } else {
+        setImagesup("")
+    }
+};
+const startNow = () => {
+    setImagesup("upimage")
+    const targetElement = document.getElementById('contents');
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth', // You can use 'auto' for instant scrolling
+      });
+    }
+}
   return (
     <div className="main-landing">
         <div className="landing-page">
-            <div className="get-start">
-                <div className="tasktifylogo">
-                    <img src={tasktifylogo} alt="" />
-                </div>
-                <h1>Tasktify</h1>
-                <div className="motto">
-                    <p>task done, pay fast</p>
-                </div>
-                <div className="getstart">
-                    <button>Get Started</button>
+            <div className={`auto-modal-create ${closeModal}`}>
+                <CreateAcc/>
+                <div className="auto-close-back" onClick={autoModal}></div>
+            </div>
+            <div className="landing-page-contents">
+                <section>
+                    <div className="get-start">
+                        <div className="tasktifylogo">
+                            <img src={tasktifylogo} alt="" />
+                        </div>
+                        <h1>Tasktify</h1>
+                        <div className="motto">
+                            <p>task done, pay fast</p>
+                        </div>
+                        <div className="getstart">
+                            <button onClick={startNow}>Get Started</button>
+                        </div>
+                    </div>
+                </section>
+                <div className={`onscroll-imgs ${closeModal} ${imagesUp}`}>
+                    <img src={compiled} alt="" />
                 </div>
             </div>
-            <div className="onscroll-imgs">
-                <img src={compiled} alt="" />
+            <div className="landing-contents" id="contents">
+                <Popular/>
+                <Tasktify/>
+                <Taskweek/>
             </div>
-            <Popular/>
         </div>
     </div>
   )

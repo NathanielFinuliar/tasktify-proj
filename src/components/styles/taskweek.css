@@ -1,0 +1,270 @@
+.task-of-week{
+    height: auto;
+    width: 100%;
+}
+.tof-main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tof-container{
+    width: 100%;
+}
+.tof-contents{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    box-sizing: border-box;
+    padding: 2vw 0 0 0;
+}
+.tof-contents section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.tasker-list{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5vw;
+}
+.tasker-list-header h1{
+    font-family: "Cocogoose";
+    font-size: 2.5vw;
+    font-weight: 100;
+}
+.tasker-list-header h1 span{
+    color: #3C9C3A;
+}
+.tasker-list-header p{
+    font-size: 1vw;
+}
+.tasker-list-contents{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 27vw;
+}
+.list-of-taskers{
+    display: block;
+    position: absolute;
+    right: -120vw;
+    transition: 1s ease-in-out;
+}
+.list-of-taskers.second{
+    right: -60vw;
+}
+.list-of-taskers.first{
+    right: -60vw;
+}
+.list-of-taskers.third{
+    right: 0;
+}
+.list-of-taskers ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    right: 10vw;
+}
+.list-of-taskers ul li{
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    height: auto;
+    width: 28vw;
+    box-sizing: border-box;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 0 2vw 0 0;
+}
+.tasker-image{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5vw;
+    position: relative;
+}
+.tasker-image img{
+    height: 10vw;
+}
+.tof-title-image{
+    text-align: center;
+}
+.tasker-infos{
+    padding: 0 1vw;
+}
+.tasker-head-info h1{
+    font-size: 1vw;
+    font-family: "Cocogoose";
+    font-weight: 100;
+}
+.tasker-head-info p{
+    font-family: "Arial";
+    font-size: .6vw;
+    display: flex;
+    align-items: center;
+    margin: 0 0 .2vw 0;
+}
+#star{
+    color: rgb(224, 224, 21);
+    margin: 0 .2vw 0 0;
+}
+#check{
+    color: green;
+    margin: 0 .2vw 0 0;
+}
+.tof-title-image h1{
+    font-size: 2vw;
+    color: #3C9C3A;
+    font-family: "Cocogoose";
+    font-weight: 100;
+}
+.tof-title-image img{
+    height: auto;
+    width: 100%;
+}
+.tasker-head-contents{
+    padding: .5vw;
+    border: .1vw solid black;
+    border-radius: .5vw;
+    margin: .7vw 0 0 0;
+}
+.skill-sets{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tasker-head-contents p{
+    font-family: "Arial";
+    font-size: .7vw;
+}
+.tasker-head-contents h1{
+    font-size: .7vw;
+    color: #3C9C3A;
+    margin: .2vw 0;
+}
+.tasker-btn-listed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tasker-btn-listed li{
+    list-style: none;
+    font-size: .7vw;
+    margin: 1vw .2vw 0 .2vw;
+    border-radius: 50%;
+    font-family: "Arial";
+    height: 1.5vw;
+    width: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.tasker-btn-listed li:hover{
+    color: #3C9C3A;
+    background: whitesmoke;
+    outline: .1vw solid #3C9C3A;
+}
+.firstlist{
+    color: #3C9C3A;
+    outline: .1vw solid #3C9C3A;
+    background: whitesmoke;
+}
+.firstlist.second{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.firstlist.third{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.secondlist{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.secondlist.second{
+    color: #3C9C3A;
+    outline: .1vw solid #3C9C3A;
+    background: whitesmoke;
+}
+.secondlist.third{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.thirdlist{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.thirdlist.second{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.thirdlist.third{
+    color: #3C9C3A;
+    outline: .1vw solid #3C9C3A;
+    background: whitesmoke;
+}
+.list-btns{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    box-sizing: border-box;
+}
+.list-btns button{
+    background: #3C9C3A;
+    border: none;
+    outline: 0;
+    height: 2vw;
+    font-size: .7vw;
+    width: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.list-btns button:hover{
+    color: #3C9C3A;
+    outline: .1vw solid #3C9C3A;
+    background: whitesmoke;
+}
+.preview-btn{
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in;
+}
+.preview-btn.second{
+    opacity: 1;
+    visibility: visible;
+}
+.preview-btn.third{
+    opacity: 1;
+    visibility: visible;
+}
+.next-btn{
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease-in;
+}
+.next-btn.second{
+    opacity: 1;
+    visibility: visible;
+}
+.next-btn.third{
+    opacity: 0;
+    visibility: hidden;
+}

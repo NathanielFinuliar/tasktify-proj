@@ -1,0 +1,108 @@
+.main-landing{
+    height: auto;
+    width: 100%;
+}
+.landing-page{
+    height: auto;
+    width: 100%;
+}
+.auto-modal-create{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+    transform: scale(0);
+    position: absolute;
+    z-index: 10;
+}
+.auto-modal-create.true{
+    transform: scale(1);
+}
+.auto-close-back{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.landing-page-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.landing-page-contents section{
+    position: relative;
+}
+.get-start{
+    text-align: center;
+    position: relative;
+}
+.tasktifylogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tasktifylogo img{
+    height: auto;
+    width: 5vw;
+}
+.get-start h1{
+    font-size: 4vw;
+    font-family: "Cocogoose";
+    font-weight: 10;
+    color: #3C9C3A;
+}
+.motto{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.motto p{
+    font-size: 1vw;
+    bottom: 3.5vw;
+    font-family: "Cocogoose";
+    color: #749774;
+    position: absolute;
+    margin: 0;
+}
+.getstart button{
+    margin: 1vw;
+    padding: .5vw 3vw;
+    border-radius: 3vw;
+    color: #3C9C3A;
+    border: .1vw solid #3C9C3A;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    outline: 0;
+}
+.get-start button:hover{
+    background: #3C9C3A;
+    color: whitesmoke;
+}
+.onscroll-imgs{
+    height: auto;
+    width: 100%;
+    margin: 1vw 0 0 0;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -40vw;
+    transition: 1.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+.onscroll-imgs.false{
+    bottom: -60vw;
+}
+.onscroll-imgs.upimage{
+    bottom: 10vw;
+    opacity: 0;
+    visibility: hidden;
+}
+.onscroll-imgs img{
+    height: auto;
+    width: 100%;
+}

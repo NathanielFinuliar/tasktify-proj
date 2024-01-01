@@ -1,0 +1,59 @@
+.footer{
+    height: auto;
+    width: 100%;
+}
+.main-footer{
+    height: 20vw;
+    width: 100%;
+}
+.footer-container{
+    height: auto;
+    width: 100%;
+}
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3C9C3A;
+    padding: 3vw 12vw;
+    box-sizing: border-box;
+}
+.footer-header section h1{
+    font-size: 2vw;
+    font-family: "Cocogoose";
+    font-weight: 100;
+    color: whitesmoke;
+}
+.footer-header section p{
+    font-size: 1vw;
+    color: whitesmoke;
+}
+.footer-header button{
+    padding: 1vw 2vw;
+    border: .2vw solid whitesmoke;
+    background: none;
+    outline: 0;
+    font-size: 1vw;
+    font-family: "Cocogoose";
+    font-weight: 100;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.footer-header button:hover{
+    background: whitesmoke;
+    color: #3C9C3A;
+}
+.footer-content{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 2vw;
+}
+#logo-tasktify img{
+    height: auto;
+    width: 3vw;
+}

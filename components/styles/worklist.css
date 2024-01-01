@@ -1,0 +1,139 @@
+.popular-work{
+    height: 100vh;
+    width: 100%;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.worklist-header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.worklist-header ul li{
+    margin: 0 1.5vw 0 0;
+    border: none;
+    padding: .5vw 2vw;
+    border-radius: 1vw;
+    font-size: .7vw;
+    background: #3C9C3A;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.worklist-header ul li:hover{
+    outline: .1vw solid #3C9C3A;
+    background: none;
+    color: #3C9C3A;
+}
+.popular.listedPopular{
+    outline: .1vw solid #3C9C3A;
+    background: none;
+    color: #3C9C3A;
+}
+.new.listedNew{
+    outline: .1vw solid #3C9C3A;
+    background: none;
+    color: #3C9C3A;
+}
+.nearby.listedNear{
+    outline: .1vw solid #3C9C3A;
+    background: none;
+    color: #3C9C3A;
+}
+.worklist-content section{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    box-sizing: border-box;
+    padding: 1vw 2vw;
+}
+.worklist-content section li{
+    padding: .5vw;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.listed-work{
+    height: 15vw;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1vw;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.88);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.88);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.88);
+}
+.listed-head{
+    padding: .5vw;
+    position: absolute;
+}
+.listed-head img{
+    height: auto;
+    width: 1.5vw;
+}
+.workimg{
+    height: auto;
+    width: 100%;
+}
+.listing-foot{
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    padding: 1vw;
+}
+.foot-titles{
+    margin: 0 1vw 0 0;
+}
+.foot-titles h1{
+    font-size: 1.5vw;
+    font-family: "Cocogoose";
+    color: whitesmoke;
+    font-weight: 100;
+}
+.foot-titles p{
+    font-family: "Arial";
+    font-size: .7vw;
+    color: whitesmoke;
+}
+.listing-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.listing-btns button{
+    padding: .5vw 2vw;
+    font-size: .6vw;
+    outline: 0;
+    font-family: "Cocogoose";
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+#hire{
+    background: none;
+    border: .1vw solid whitesmoke;
+    color: whitesmoke;
+}
+#hire:hover{
+    background: rgb(206, 206, 206);
+}
+#take{
+    background: #3C9C3A;
+    border: none;
+    color: whitesmoke;
+}
+#take:hover{
+    background: #2b7429;
+}

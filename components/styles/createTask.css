@@ -1,0 +1,201 @@
+.createTask{
+    height: auto;
+    width: 50vw;
+    background: rgba(26, 63, 25, 0.829);
+    border-radius: 2vw;
+    box-shadow: 0 0 1vw rgb(99, 99, 99);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    z-index: 5;
+    overflow: hidden;
+}
+.crtTask-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.crtLeft{
+    padding: 2vw;
+    color: whitesmoke;
+}
+.crtTask-header{
+    margin: 0 0 1vw 0;
+}
+.crtTask-header h1{
+    font-size: 1vw;
+}
+.crtLeft h2{
+    font-size: 1vw;
+    font-weight: 100;
+    margin: 0;
+}
+.crtTask-content{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 20vw;
+}
+.crtTask-content section{
+    width: 100%;
+    position: absolute;
+    transition: .7s ease;
+}
+.crtTask-content select{
+    margin: .2vw 0 1vw 0;
+    padding: .5vw 1vw;
+    width: 100%;
+    border-radius: .5vw;
+    outline: 0;
+    border: none;
+}
+.crtContent1{
+    left: 0;
+}
+.crtContent1.second{
+    left: -100vw;
+}
+.crtContent1.third{
+    left: -200vw;
+}
+.crtContent1 p{
+    font-size: .6vw;
+}
+.crtContent2{
+    left: 100vw;
+}
+.crtContent2.second{
+    left: 0;
+}
+.crtContent2.third{
+    left: -200vw;
+}
+.crtContent3{
+    left: 200vw;
+}
+.crtContent3.second{
+    left: 100vw;
+}
+.crtContent3.third{
+    left: 0;
+}
+.crtTask-content section h1{
+    font-size: .7vw;
+    font-weight: 100;
+    margin: 0 0 .5vw 0;
+}
+.crtContent2 textarea{
+    width: 100%;
+    border-radius: .5vw;
+    outline: 0;
+    border: none;
+    padding: 1vw;
+    box-sizing: border-box;
+    font-size: .8vw;
+}
+.crtContent2 textarea::placeholder{
+    font-style: italic;
+    opacity: 80%;
+}
+.crtContent2 p{
+    font-size: .6vw;
+}
+.crtContent3 p{
+    font-size: .6vw;
+}
+.crtContent3 input{
+    width: 100%;
+    padding: .5vw 1vw;
+    border: none;
+    outline: 0;
+    border-radius: .5vw;
+    box-sizing: border-box;
+    margin: .5vw 0 0 0;
+}
+.crtContent3 input::placeholder{
+    font-style: italic;
+    opacity: 80%;
+}
+.crt-task-btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 10vw;
+}
+.termsCondition{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: .5vw 0 0 0;
+}
+.termsCondition input{
+    width: auto;
+    margin: 0 .5vw 0 0;
+}
+.termsCondition p{
+    width: 100%;
+}
+.termsCondition p span{
+    color: #3C9C3A;
+    cursor: pointer;
+}
+.crt-task-btns li{
+    list-style: none;
+    font-family: "Arial";
+    font-size: .7vw;
+}
+.prevBtn{
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.prevBtn.second{
+    opacity: 1;
+    visibility: visible;
+}
+.prevBtn.third{
+    opacity: 1;
+    visibility: visible;
+}
+.nextBtn{
+    visibility: visible;
+    opacity: 1;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.nextBtn.second{
+    visibility: visible;
+    opacity: 1;
+}
+.nextBtn.third{
+    visibility: hidden;
+    opacity: 0;
+}
+.crtRight{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../assets//taketask.jpg')center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.createNow{
+    margin: 2vw 0 0 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createNow button{
+    padding: .5vw 2vw;
+    border-radius: 1vw;
+    font-size: .8vw;
+    background: #3C9C3A;
+    border: none;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+}

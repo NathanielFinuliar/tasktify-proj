@@ -10,6 +10,7 @@ import Tasktify from "./tasktify";
 import CreateAcc from "./create-acc";
 import Taskweek from "./taskerweek"
 import Testimonials from "./testimonials";
+import Search from "./search";
 
 const Landing = () => {
 
@@ -81,6 +82,7 @@ const startNow = () => {
                 </div>
             </div>
             <div className="landing-contents" id="contents">
+                <Search/>
                 <Popular/>
                 <Tasktify/>
                 <Taskweek/>

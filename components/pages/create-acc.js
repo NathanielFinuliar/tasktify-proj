@@ -4,13 +4,12 @@ import ReactFlagsSelect from 'react-flags-select';
 import '../styles/create-modal.css'
 // icons
 import { FcGoogle } from "react-icons/fc";
-import { IoClose } from "react-icons/io5";
 const CreateAcc = () => {
 
   // useState
 const [ navDown, setNavdown ] = useState(false);
 const [ create,setCreate ] = useState(false);
-const [ signup,setSignUp ] = useState(false);
+const [ signup,setSignUp ] = useState("");
 const [selected, setSelected] = useState("");
 
 // nav login btn
@@ -20,11 +19,15 @@ const closeCreate = () => {
 
 // create account btn
 const signupAccount = () => {
-  setSignUp(true)
+  setSignUp("signup")
 }
 // login account
 const loginAcc = () => {
-  setSignUp(false)
+  setSignUp("login")
+}
+// forgot pass
+const forgotPass = () => {
+  setSignUp("forgot")
 }
 // useEffect
 useEffect(() => {
@@ -36,11 +39,21 @@ useEffect(() => {
 
   }
 }, [])
-
+// success send code modal
+const SuccesModal = () => {
+  return(
+    <div className="success-Container">
+      <p>Success</p>
+    </div>
+  )
+}
 
   return (
     <div className="create-account-modal">
         <div className="create-account">
+          {/* <div className="success-send">
+            <SuccesModal/>
+          </div> */}
             <div className="account">
                 <h1>Tasktify</h1>
                 <div className="motto-modal">
@@ -55,6 +68,9 @@ useEffect(() => {
                   <input type="text" placeholder='Username'/>
                   <input type="text" placeholder='Password'/>
                   <button>Login</button>
+                  </div>
+                  <div className="fgt-pass">
+                    <button onClick={forgotPass}>Forgot Password?</button>
                   </div>
                   <p>Don't have Tasktify Account?</p>
                   <li onClick={signupAccount}>Create Account Now</li>
@@ -74,15 +90,17 @@ useEffect(() => {
                         <input type="text" placeholder='First Name'/>
                         <input type="text" placeholder='Last Name'/>
                       </div>
-                      <ReactFlagsSelect
-                        selected={selected}
-                        onSelect={(code) => setSelected(code)}
-                        className='countries'
-                        placeholder="Select Country"
-                        searchable
-                        selectedSize={10}
-                        optionsSize={10}
-                      />
+                      <div className="flagSelect">
+                        <ReactFlagsSelect
+                          selected={selected}
+                          onSelect={(code) => setSelected(code)}
+                          className='countries'
+                          placeholder="Select Country"
+                          searchable
+                          selectedSize={10}
+                          optionsSize={10}
+                        />
+                      </div>
                       <input type="integer" placeholder='Mobile no.' maxLength="11"/>
                       <div className="agree-create">
                         <input type="checkbox" name="" id="" />
@@ -97,6 +115,23 @@ useEffect(() => {
                   <div className="foot-icons">
                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="" />
                       <img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png" alt="" />
+                  </div>
+                </section>
+                <section className={`forgot-password ${signup}`}>
+                  <div className="fgtpass-header">
+                    <h2>Request reset password</h2>
+                  </div>
+                  <div className="fgt-content">
+                    <input type="text" />
+                    <p>input your registered email</p>
+                    <button>send code</button>
+                  </div>
+                  <div className="returnBtn">
+                    <hr />
+                    <div className="btns-return">
+                      <button onClick={loginAcc}>Login Account</button>
+                      <button onClick={signupAccount}>Create Account</button>
+                    </div>
                   </div>
                 </section>
             </div>

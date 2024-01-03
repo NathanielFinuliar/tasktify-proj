@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 // css
 import '../styles/taskweek.css'
 // assets
@@ -14,6 +14,8 @@ const Taskweek = () => {
 
 // useState
 const [userList, setUserlist] = useState("")
+
+// autoscroll
 
 const prevList = () => {
     if (userList === "third") {

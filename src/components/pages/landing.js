@@ -1,14 +1,16 @@
 import React, {useEffect,useState} from "react";
 // css
 import '../styles/landing.css'
-// js
-import Popular from "./popularwork";
 // asset 
 import tasktifylogo from '../assets/tasktifylogo.png'
 import compiled from '../assets/compiled-img.png'
+// js
+import Popular from "./popularwork";
 import Tasktify from "./tasktify";
 import CreateAcc from "./create-acc";
 import Taskweek from "./taskerweek"
+import Testimonials from "./testimonials";
+import Search from "./search";
 
 const Landing = () => {
 
@@ -30,7 +32,6 @@ useEffect(() => {
     };
 
 }, []);
-console.log(window.scrollY);
 // Event listener to track scroll position
 const handleScroll = () => {
     if (window.scrollY <= 100) {
@@ -81,9 +82,11 @@ const startNow = () => {
                 </div>
             </div>
             <div className="landing-contents" id="contents">
+                <Search/>
                 <Popular/>
                 <Tasktify/>
                 <Taskweek/>
+                <Testimonials/>
             </div>
         </div>
     </div>

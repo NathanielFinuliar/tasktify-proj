@@ -20,6 +20,27 @@
     background: #3C9C3A;
     color: whitesmoke;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.worklist-header ul li:hover{
+    outline: .1vw solid #3C9C3A;
+    background: none;
+    color: #3C9C3A;
+}
+.popular.listedPopular{
+    outline: .1vw solid #3C9C3A;
+    background: none;
+    color: #3C9C3A;
+}
+.new.listedNew{
+    outline: .1vw solid #3C9C3A;
+    background: none;
+    color: #3C9C3A;
+}
+.nearby.listedNear{
+    outline: .1vw solid #3C9C3A;
+    background: none;
+    color: #3C9C3A;
 }
 .worklist-content section{
     display: grid;

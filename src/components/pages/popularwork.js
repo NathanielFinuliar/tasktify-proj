@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 // css
 import '../styles/worklist.css'
 // asset
@@ -6,14 +6,28 @@ import workimg from '../assets/gardener.jpg'
 import logo from '../assets/tasktifylogo.png'
 
 const Popular = () => {
+
+// usestate
+const [listedWork, setListedwork] = useState("listedPopular")
+
+// btns
+const openPopular = () => {
+    setListedwork("listedPopular")
+}
+const openNew = () => {
+    setListedwork("listedNew")
+}
+const openNearby = () => {
+    setListedwork("listedNear")
+}
   return (
     <div className="popular-work">
         <div className="worklist-container">
             <div className="worklist-header">
                 <ul>
-                    <li>Popular</li>
-                    <li>New</li>
-                    <li>Nearby</li>
+                    <li className={`popular ${listedWork}`} onClick={openPopular}>Popular</li>
+                    <li className={`new ${listedWork}`} onClick={openNew}>New</li>
+                    <li className={`nearby ${listedWork}`} onClick={openNearby}>Nearby</li>
                 </ul>
             </div>
             <div className="worklist-content">

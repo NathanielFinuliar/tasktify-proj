@@ -1,0 +1,73 @@
+.testimonials{
+    height: auto;
+    width: 100%;
+}
+.testimonials-container{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8vw 0 0 0;
+}
+.testimonials-header{
+    padding: 0 4vw;
+    box-sizing: border-box;
+}
+.testimonials-header p{
+    font-size: 1vw;
+}
+.testimonials-header h1{
+    font-size: 3vw;
+    font-family: "Cocogoose";
+    font-weight: 100;
+    color: #3C9C3A;
+}
+.testomonials-contents{
+    padding: 0 4vw;
+    box-sizing: border-box;
+}
+.testomonials-contents section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vw 0;
+}
+.testomonials-contents section li{
+    height: auto;
+    width: 25vw;
+    padding: 1vw;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+}
+.client-header{
+    display: flex;
+    align-items: center;
+}
+.client-img{
+    margin: 0 1vw 0 0;
+}
+.client-img img{
+    height: auto;
+    width: 4vw;
+    border-radius: 50%;
+}
+.client-info p{
+    font-size: 1vw;
+    font-family: "Cocogoose";
+}
+.client-contents{
+    margin: 1vw 0 0 0;
+}
+.client-contents p{
+    font-size: .7vw;
+    margin: 0 0 .5vw 0;
+}
+.client-contents span{
+    font-size: .7vw;
+    font-family: "Cocogoose";
+    color: #3C9C3A;
+}

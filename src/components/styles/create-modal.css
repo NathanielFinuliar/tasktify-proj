@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .create-account{
     height: 32vw;
@@ -32,10 +33,13 @@
 .login-account{
     transition: .3s ease-in-out;
 }
-.login-account.false{
+.login-account{
     left: 0;
 }
-.login-account.true{
+.login-account.signup{
+    left: -100vw;
+}
+.login-account.forgot{
     left: -100vw;
 }
 .account p{
@@ -79,6 +83,12 @@
     align-content: center;
     justify-content: center;
     cursor: pointer;
+    transform: scale(1);
+    transition: .3s ease;
+}
+.use-google-btn button:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 1vw #3C9C3A;
 }
 #google-icon{
     font-size: .7vw;
@@ -143,7 +153,7 @@
     right: 100vw;
     transition: .3s ease-in-out;
 }
-.create-account-now.true{
+.create-account-now.signup{
     right: 0;
 }
 form{
@@ -204,4 +214,111 @@ form button{
 }
 form button:hover{
     background: #144613;
+}
+.flagSelect button:hover{
+    color: whitesmoke;
+}
+.forgot-password{
+    right: -100vw;
+    transition: .3s ease;
+    padding: 5vw 0;
+    box-sizing: border-box;
+}
+.forgot-password.forgot{
+    right: 0;
+}
+.fgtpass-header{
+    width: 100%;
+    text-align: center;
+}
+.fgtpass-header h2{
+    font-size: 1vw;
+    font-family: "Cocogoose";
+    font-weight: 100;
+    color: #3C9C3A;
+}
+.fgt-pass button{
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color: #3C9C3A;
+    background: none;
+    transition: .3s ease;
+}
+.fgt-pass button:hover{
+    color: #144613;
+}
+.fgt-content{
+    padding: 0 5vw;
+}
+.fgt-content input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5vw 1vw;
+    outline: 0;
+    border: none;
+    border-radius: 3vw;
+}
+.fgt-content p{
+    margin: .5vw 0 0 0;
+    font-size: .5vw;
+    font-weight: 100;
+    color: #3C9C3A;
+}
+.fgt-content button{
+    margin: 1vw 0 0 0;
+    padding: .5vw 3vw;
+    outline: 0;
+    border: none;
+    background: #3C9C3A;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 1vw;
+    transition: .3s ease;
+}
+.fgt-content button:hover{
+    background: #144613;
+}
+.returnBtn{
+    display: block;
+    margin: 2vw 0 0 0;
+    padding: 0 10vw;
+}
+.btns-return{
+    padding: 0 7vw;
+}
+.returnBtn hr{
+    margin: 0 0 2vw 0;
+    border-top: .2vw solid #3C9C3A;
+}
+.returnBtn button{
+    background: none;
+    border: none;
+    outline: 0;
+    font-size: .7vw;
+    color: #3C9C3A;
+    cursor: pointer;
+    width: 100%;
+    transition: .3s ease;
+    transform: scale(1);
+    margin: 0 0 .5vw 0;
+}
+.returnBtn button:hover{
+    color: #144613;
+    transform: scale(1.1);
+}
+
+/* success modal */
+.success-send{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.success-Container{
+    background: whitesmoke;
+    border: .1vw solid black;
+    padding: 2vw;
+    border-radius: 1vw;
 }

@@ -1,0 +1,17 @@
+.help{
+    height: auto;
+}
+.chat-icon{
+    position: fixed;
+    bottom: 2vw;
+    left: 1vw;
+    z-index: 1;
+    font-size: 3vw;
+    color: #2e832c;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    transform: scale(1);
+}
+.chat-icon:hover{
+    transform: scale(1.1);
+}
